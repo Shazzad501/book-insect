@@ -34,14 +34,13 @@ const ReadList = () => {
       const sortedListedBookByRating = [...listedBook].sort((a,b) => a.rating - b.rating);
       setListedBook(sortedListedBookByRating);
     }
-
     if(sortType === 'Number of pages'){
       const sortedWishListByPage = [...wishList].sort((a,b) => a.totalPages - b.totalPages);
-      setListedBook(sortedWishListByPage);
+      setWishList(sortedWishListByPage);
     }
     if(sortType === "Rating"){
       const sortedWishListByRating = [...wishList].sort((a,b) => a.rating - b.rating);
-      setListedBook(sortedWishListByRating);
+      setWishList(sortedWishListByRating);
     }
   }
 
